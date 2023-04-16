@@ -1,11 +1,11 @@
-import { globalCss } from '@enline-ui/react'
+import { globalCss } from "@enline-ui/react";
 
 export const globalStyles = globalCss({
-  '*': {
-    boxSizing: 'border-box',
+  "*": {
+    boxSizing: "border-box",
     padding: 0,
     margin: 0,
-    fontSize: '$md',
+    fontSize: "$md",
 
     // '@media (min-width: 768px)': {
     //   fontSize: '$lg',
@@ -17,8 +17,8 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$white',
-    color: '$black',
-    '-webkit-font-smoothing': 'antialiased',
+    backgroundColor: "$white",
+    color: "$black",
+    "-webkit-font-smoothing": "antialiased",
   },
-})
+});

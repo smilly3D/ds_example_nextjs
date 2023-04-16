@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
 import { DateTime } from "luxon";
+import { useEffect, useState } from "react";
 
 export const DateTimeWatch = () => {
-  const [dateTime, setDateTime] = useState(new Date());
+  const [dateTime, setDateTime] = useState<any>(new Date());
 
   useEffect(() => {
     const updateDateTime = () => {

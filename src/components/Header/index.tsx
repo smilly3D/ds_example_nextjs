@@ -4,14 +4,13 @@ import {
   HeaderUserMenu,
   HeaderWraper,
 } from "./styles";
-import Image from "next/image";
 
 import logo from "../../Assets/logo-white.svg";
-import { Avatar } from "@enline-ui/react";
-import { useRouter } from "next/router";
-
-import { DateTime } from "luxon";
 import { DateTimeWatch } from "../DateTimeWatch";
+
+import { Avatar } from "@enline-ui/react";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 export const Header = () => {
   const router = useRouter();

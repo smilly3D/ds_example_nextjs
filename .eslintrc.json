@@ -1,6 +1,32 @@
 {
-  "extends": [
-    "@rocketseat/eslint-config/react",
-    "next/core-web-vitals"
-  ]
+	"plugins": ["@typescript-eslint/eslint-plugin", "import"],
+	"extends": ["eslint:recommended", "next/core-web-vitals", "plugin:prettier/recommended", "plugin:import/typescript"],
+	"settings": {
+		"import/resolver": {
+			"typescript": true,
+			"node": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"jest": true
+	},
+	"rules": {
+		"react-hooks/exhaustive-deps": "off",
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": "warn",
+		"no-console": "warn",
+		"import/order": [
+			"error",
+			{
+				"groups": ["index", "sibling", "parent", "internal", "external", "builtin", "object", "type"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		]
+	}
 }
