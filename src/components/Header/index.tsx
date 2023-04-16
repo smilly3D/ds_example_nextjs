@@ -11,6 +11,7 @@ import { Avatar } from "@enline-ui/react";
 import { useRouter } from "next/router";
 
 import { DateTime } from "luxon";
+import { DateTimeWatch } from "../DateTimeWatch";
 
 export const Header = () => {
   const router = useRouter();
@@ -28,10 +29,7 @@ export const Header = () => {
             height={25}
           />
           <HeaderRealtime size={"xs"}>
-            Real-time:{" "}
-            {DateTime.now()
-              .toFormat("MMMM dd, HH:mm ZZZZ")
-              .replace("GMT", "UTC")}
+            <DateTimeWatch />
           </HeaderRealtime>
         </HeaderWraper>
         <HeaderWraper>
