@@ -1,11 +1,14 @@
 import { Container } from "./styles";
 
-import { Heading } from "@enline-ui/react";
+import { BoxKpi } from "../BoxKpi";
 
 export const Kpis = () => {
   return (
     <Container>
-      <Heading as={"h1"}>Kpis</Heading>
+      <BoxKpi />
+      <BoxKpi />
+      <BoxKpi />
+      <BoxKpi />
     </Container>
   );
 };
