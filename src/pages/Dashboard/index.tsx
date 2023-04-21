@@ -5,6 +5,8 @@ import {
   ContainerHeader,
 } from "./styles";
 
+import { Kpis } from "@/components/Kpis";
+
 import { Heading } from "@enline-ui/react";
 
 export default function Home() {
@@ -18,7 +20,7 @@ export default function Home() {
           <Heading as="h2">Body</Heading>
         </ContainerBody>
         <AsideContainer>
-          <Heading as="h2">Aside</Heading>
+          <Kpis />
         </AsideContainer>
       </Container>
     </>

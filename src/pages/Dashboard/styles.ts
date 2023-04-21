@@ -2,10 +2,10 @@ import { styled } from "@enline-ui/react";
 
 export const Container = styled("div", {
   display: "grid",
-  gridTemplateRows: "20% 80%",
+  gridTemplateRows: "15% 85%",
   gridTemplateAreas: `
-  'header header header'
-  'body body aside'
+  'header header header header'
+  'body body body aside'
   `,
   width: "100%",
 });
@@ -24,7 +24,8 @@ export const ContainerBody = styled("main", {
 
 export const AsideContainer = styled("aside", {
   gridArea: "aside",
-  background: "$blue100",
+  background: "$gray100",
   color: "$white",
   width: "100%",
+  padding: "$8",
 });
