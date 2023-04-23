@@ -6,9 +6,6 @@ export const Kpis = () => {
   return (
     <Container>
       <BoxKpi />
-      <BoxKpi />
-      <BoxKpi />
-      <BoxKpi />
     </Container>
   );
 };

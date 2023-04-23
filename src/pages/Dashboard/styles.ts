@@ -4,8 +4,8 @@ export const Container = styled("div", {
   display: "grid",
   gridTemplateRows: "15% 85%",
   gridTemplateAreas: `
-  'header header header header'
-  'body body body aside'
+  'header header header header header header header'
+  'body body body body body body aside'
   `,
   width: "100%",
 });

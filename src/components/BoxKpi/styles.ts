@@ -10,5 +10,5 @@ export const Container = styled("div", {
   padding: "2rem",
   color: "$white",
   borderRadius: "10px",
-  border: "1px solid $gray200",
+  border: "1px solid $purple500",
 });
